@@ -78,7 +78,7 @@ class QueueArray {
 
     public void Enqueue(int value) {
         if (isFull()) {
-            System.out.println("Queue is full.   cannot insert");
+            System.out.println("Queue is full. It  cannot insert");
             return;
         }
 
