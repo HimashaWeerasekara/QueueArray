@@ -16,7 +16,10 @@ public class QueueArrayDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        QueueArray x = new QueueArray(5);
+        Scanner in = new Scanner(System.in);
+         int n = in .nextInt();
+        in.close();
+        QueueArray x = new QueueArray(n);
         x.Display();
         x.Enqueue(7);
         x.Enqueue(3);
