@@ -32,6 +32,7 @@ public class QueueArrayDemo {
             x.Dequeue();
             x.Dequeue();
             x.Dequeue();
+            x.Display();
             x.Dequeue();
             x.Display();
             x.Enqueue(5);
