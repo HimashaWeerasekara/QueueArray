@@ -27,6 +27,7 @@ public class QueueArrayDemo {
         x.Enqueue(1);
         x.Enqueue(2);
         x.Enqueue(8);
+        x.Enqueue(5);
         x.Display();
         try {
             x.Dequeue();
@@ -101,7 +102,7 @@ class QueueArray {
         //not allowed to remove middle elements. only frount element.
         // when return typ is void, do not need exception 
         if (isEmpty()) {
-            throw new Exception("Queue is empty cannot remove");
+            throw new Exception("Queue is empty cannot remove.");
         }
         int temp = this.queArray[front];
         if (this.front == this.maxSize - 1) {
@@ -115,14 +116,14 @@ class QueueArray {
 
     public int peek() throws Exception {
         if (isEmpty()) {
-            throw new Exception("Queue is empty. cannot get peek");
+            throw new Exception("Queue is empty. cannot get peek.");
         }
         return this.queArray[this.front];
     }
 
     public void Display() {
         if (isEmpty()) {
-            System.out.println("Queue is empty nothing to print");
+            System.out.println("Queue is empty nothing to print.");
             return;
         }
         int i = this.front;
